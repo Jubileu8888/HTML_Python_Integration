@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TESTE</h1>
+
+
+    <form action="/valor1" method="post">
+        <label for="input_v1">Digite um texto:</label>
+        <input type="text" id="input_v1" name="input_v1">
+        <input type="submit" value="enviar">
+    </form>
+<br>
+<br>
+    <form action="/valor2" method="post">
+        <label for="input_v2">Digite um texto:</label>
+        <input type="text" id="input_v2" name="input_v2">
+        <input type="submit" value="enviar">
+    </form>
+
+
+    {% if dados %}
+    <p>dados recebidos: {{valorprimeiro}}</p>
+    {% endif %}
+    <br>
+    <br>
+    <br>
+
+    {% if dados %}
+    <p>dados recebidos: {{valorsegundo}}</p>
+    {% endif %}
+</body>
+</html>
